@@ -3,7 +3,7 @@ from validator.validators.base_validator import BaseValidator
 
 
 class LenValidator(BaseValidator):
-    def __init__(self, len: Optional[int], type: Literal["max", "min"] = "min") -> None:
+    def __init__(self, len: Optional[int] = None, type: Literal["max", "min"] = "min") -> None:
         self._len = len or 0
         self.type = type
     
